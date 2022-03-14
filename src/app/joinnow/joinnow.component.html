@@ -1,0 +1,17 @@
+<section class="joinnow">
+  <div class="login col-lg-4 m-auto shadow-lg">
+      <form (ngSubmit)="userLogin()"> 
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email"[(ngModel)]="loginUser.userId" class="form-control" id="userId" name="userId" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" [(ngModel)]="loginUser.password"class="form-control" id="password" name ="password">
+          </div>
+          <button type="submit" class="btn btn-primary col-lg-12">Log In</button>
+        </form>
+
+  </div>
+</section>
